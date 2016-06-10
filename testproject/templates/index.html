@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}HashGrowth Home{% endblock %}
+{% load staticfiles %}
+
+{% block home_link %}<li class="active">{% endblock %}
+
+{% block css %}
+     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+{% endblock %}
+
+{% block content %}
+  <div class="jumbotron">
+      <h3>Signup/registration form demo</h3>
+    <h1>Index page</h1>
+    <p>I couldn't compltete all the things mention in the test, I am working on it, I will complete remaining things like(file uploading and dropdown and checkbox) and resend it as soon as possible.</p>
+    <p></p>
+    <p>
+      <a class="btn btn-lg btn-primary" href="{% url 'register_user' %}" role="button">click here for start &raquo;</a>
+    </p>
+  </div>
+
+{% endblock %}
+ {% block js %}
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script type="text/javascript" src="{% static 'js/autocomplete.js' %}"></script>
+ {% endblock %}

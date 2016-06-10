@@ -1,0 +1,119 @@
+
+ 
+{% extends "base.html" %}
+
+ {% block content %}
+    <!--Adress with respect to home page  -->
+    <section id="inner-headline">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="breadcrumb">
+                        <li style="font-size:18px"><a href="/"><i class="fa fa-home"></i></a> <span class="active">Registration Form</span> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of address bar   -->
+
+    <section>
+        <div class="container">
+        	<form action="{% url 'registration_form' %}" method="post" enctype="multipart/form-data" class="form-horizontal" role="form">
+                {% csrf_token %}
+                <div class="form-group">
+                    {{ form.hospital_name.errors }}
+                    <label class="col-md-3 control-label">Hospital Name:</label>
+                    <div class="col-md-9">
+                    	{{ form.hospital_name }}
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    {{ form.tagline.errors }}
+                    <label class="col-md-3 control-label">Tagline:</label>
+                    <div class="col-md-9">
+                        {{ form.tagline }}
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    {{ form.cheif_officer.errors }}
+                    <label class="col-md-3 control-label">Chief officer:</label>
+                    <div class="col-md-9">
+                        {{ form.cheif_officer }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    {{ form.establishment_act.errors }}
+                    <label class="col-md-3 control-label">Establishment Act:</label>
+                    <div class="col-md-9">
+                        {{ form.establishment_act }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    {{ form.issue_date.errors }}
+                    <label class="col-md-3 control-label">Issue Date:</label>
+                    <div class="col-md-9">
+                        {{ form.issue_date }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    {{ form.number_of_beds.errors }}
+                    <label class="col-md-3 control-label">Number of Beds:</label>
+                    <div class="col-md-9">
+                        {{ form.number_of_beds }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    {{ form.about_us.errors }}
+                    <label class="col-md-3 control-label">About us:</label>
+                    <div class="col-md-9">
+                        {{ form.about_us }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    {{ form.logo.errors }}
+                    <label class="col-md-3 control-label">Logo/Mono:</label>
+                    <div class="col-md-9">
+                        {{ form.logo }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    {{ form.hospital_photo.errors }}
+                    <label class="col-md-3 control-label">Hospital Photo:</label>
+                    <div class="col-md-9">
+                        {{ form.hospital_photo }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    {{ form.reg_certificate.errors }}
+                    <label class="col-md-3 control-label">Reg. Certificate:</label>
+                    <div class="col-md-9">
+                        {{ form.reg_certificate }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    {{ form.license_certificate.errors }}
+                    <label class="col-md-3 control-label">License Certificate:</label>
+                    <div class="col-md-9">
+                        {{ form.license_certificate }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                	<input type="submit" value="submit" />
+                </div>
+                
+		    </form>
+        </div><!--end of container class -->
+    </section>
+ {% endblock%}

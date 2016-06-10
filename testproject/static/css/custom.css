@@ -1,0 +1,93 @@
+.btn-margin-left {
+    margin-left: 4px;
+}
+
+.btn-margin-right {
+    margin-right: 4px;
+}
+
+.top-space {
+	margin-top: 35px;
+}
+
+.description_div {
+	overflow-y: auto;
+	height: 200px;
+}
+
+.slideshow{
+	height: 400px
+}
+
+.slideshow-images{
+	max-height: 380px;
+	margin: 0 auto;
+}
+
+.onboard-step{
+	height: 30px;
+	font-weight: bold;
+	width: 30px;
+	padding: 5px;
+	margin:5px auto;
+	border-radius: 100%;
+	background-color: #777;
+	color: #fff;
+}
+
+.grey-color{
+	color: #777;
+}
+
+.blue-background{
+	background-color: #337ab7;
+}
+
+.blue-color{
+	color: #337ab7;
+}
+
+.onboard-next{
+	color: #777;
+}
+.reviews-div{
+	overflow-y: auto;
+	height: 400px;
+}
+
+.modal-vertical-centered {
+  transform: translate(0, 50%) !important;
+  -ms-transform: translate(0, 50%) !important; /* IE 9 */
+  -webkit-transform: translate(0, 50%) !important; /* Safari and Chrome */
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.clicked-button{
+	background-color: #adadad;
+}
+
+
+#hoverText{
+	position: absolute;  
+	top: 50%;
+	left: 55%;
+  	transform: translate(-50%, -50%);
+  	height: 130px;
+  	width: 200px;
+  	padding:5px;
+  	background-color: white;
+  	border:1px solid #adadad;
+}
+
+#people_rated_vs_apps{
+	position: relative;
+}
+
+#tooltip-close{
+	cursor: hand;
+}

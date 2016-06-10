@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}HashGrowth: Help Center{% endblock %}
+{% load staticfiles %}
+
+{% block content %}
+  {% if request.user.is_authenticated %}
+    <div class="jumbotron">
+      <h1>Help page</h1>
+    </div>
+  {% else %}
+    ERROR!
+  {% endif%}
+{% endblock %}
