@@ -1,0 +1,53 @@
+*.DS_Store
+# Byte-compiled / optimized / DLL files
+*.pyc
+*/**/*.pyc
+__pycache__/
+*/**/__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+base.py
+# pagedown static files
+
+#production setting
+production.py
+manage.py
+
+# local settings
+
+staging.py
+local.text
+staging.text
+
+# Distribution / packaging
+.Python
+env/
+venv/
+
+# Unit test / coverage reports
+
+# Django stuff:
+*.log
+
+# PyDev
+.metadata
+.settings
+.project
+.pydevproject
+
+# SQLite DB
+db.sqlite3
+
+# Logs
+debug.log
+
+# VIM
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+.ropeproject
+*~
